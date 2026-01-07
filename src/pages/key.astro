@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeaderComponent from "../components/headerComponent.astro";
+
+---
+
+<Layout>
+    <div class="">
+        <div class="w-full flex flex-col relative overflow-hidden h-screen"> <!-- Add h-96 for height -->
+            <div class="absolute inset-0 bg-black opacity-60 z-10"></div> <!-- Mask -->
+            <img src="../public/banner.jpg" class="self-center w-full h-full object-cover absolute inset-0 z-0" alt="" /> <!-- absolute inset-0 z-0 -->
+            <p class="absolute top-65 w-full text-white text-6xl font-bold italic z-20 text-center px-4">
+                <span class="text-[#e63946]">S</span>ILKSONG <span class="text-[#e63946]">S</span>PEEDRUNNING <span class="text-[#e63946]">S</span>TRATS
+            </p>
+            <p class="absolute top-90 left-1/2 -translate-x-1/2 text-gray-200 w-120 italic max-w-full px-4 text-center z-20">
+                A centralized, community-powered archive for the earliest Silksong runners, built on shared resources, with every optimized movement line and boss takedown documented in one place.
+            </p>
+            <div class="hover:bg-white hover:text-black transition-colors duration-400 absolute top-120 tracking-widest left-1/2 -translate-x-1/2 h-15 w-55 justify-center items-center font-bold flex flex-col border-1 border-white text-white top-50 z-50">WHERE TO START?</div>
+        </div>
+    </div>
+    <div class="grid grid-cols-3 h-10 justify-center items-center">
+        <p class="text-gray-500 italic flex flex-col text-center border-b-1 border-[#e63946] py-3">ANY% BELLS</p>
+        <p class="text-white flex flex-col text-center border-1 border-[#e63946] py-3 bg-[#e63946] font-bold tracking-widest">ANY% KEY</p>
+        <p class="text-gray-500 italic flex flex-col text-center border-b-1 border-[#e63946] py-3">COMING SOON...</p>
+    </div>
+    <p class="text-white w-full text-center font-bold text-4xl my-10 tracking-widest">BELLS ROUTE</p>
+    <p class="text-gray-300 mx-40 my-10 text-center">Key route is fastest of all any% NMG routes (~90-120 seconds faster than LP bell route as reference), gets 500 rosaries during the movement to and from bell beast, to buy a simple key in Bone Bottom, then goes through Wormways to get to Shellwood.
+    </p>
+
+
+</Layout>
