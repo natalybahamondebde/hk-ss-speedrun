@@ -4,4 +4,10 @@
 
 @theme {
     --font-body: 'Inter Variable', sans-serif;
+    --animate-fade-in: fade-in 1s ease-out;
+    }
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
